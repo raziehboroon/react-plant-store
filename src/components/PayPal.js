@@ -26,7 +26,7 @@ const PayPal = () => {
         },
       })
       .render(paypal.current);
-  }, []);
+  }, [clearCart, total]);
   // when dependecy array is removed, add one paypal button each time +/_ is pressed
   return (
     <div>
