@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../Context";
 import { Link } from "react-router-dom";
+import PayPal from "./PayPal";
 const CartSummary = () => {
   const { subtotal, tax, total, clearCart } = useGlobalContext();
 
@@ -11,7 +12,7 @@ const CartSummary = () => {
           <button
             onClick={() => clearCart()}
             id="btn-cart"
-            className="btn fw-bold py-1 px-4 my-1 text-capitalize"
+            className="btn fw-bold py-1 px-4 my-1 mx-0 text-capitalize"
           >
             clear cart
           </button>
@@ -25,6 +26,7 @@ const CartSummary = () => {
         <h5>
           <span className="plant-title">total :</span> $ {total}
         </h5>
+        <PayPal />
       </div>
     </div>
   );

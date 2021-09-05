@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "./pages/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import SinglePlant from "./pages/SinglePlant";
@@ -17,9 +16,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
-        </Route>
-        <Route path="/about">
-          <About />
         </Route>
         <Route path="/cart">
           <Cart />

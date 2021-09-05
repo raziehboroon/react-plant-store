@@ -30,15 +30,14 @@ const Navigation = () => {
           >
             <i className="fas fa-shopping-cart p-1"></i>
             my cart
-            <div
+            <span
               id="basket-index"
-              className="d-flex align-items-center justify-content-center p-0 font-size-s"
+              className="d-flex align-items-center justify-content-center p-0"
             >
               {itemInBasket}
-            </div>
+            </span>
           </button>
         </Link>
-        {/* <Link to="/about">About</Link> */}
       </div>
     </nav>
   );

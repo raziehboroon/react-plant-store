@@ -17,15 +17,20 @@ const SinglePlant = () => {
   return (
     <div id="single-plant" className="container section">
       <h2 className="text-center pt-3 mb-4 plant-title">{product.title}</h2>
-      <div className="row mb-3">
-        <div className="col-12 col-sm-4">
+      <div className="row flex-column flex-sm-row mb-3">
+        {/* image */}
+        <div className="col-12 col-sm-4 d-flex justify-content-center justify-content-sm-end p-0">
           <img
             src={`../${product.img}`}
             alt={product.title}
-            className="mx-auto rounded"
+            className="rounded p-1 m-0"
           />
         </div>
-        <div className="col-12 col-sm-7 single-plant-info mx-auto p-2">
+        {/* info */}
+        <div
+          id="single-plant-info"
+          className="col-12 col-sm-7 mx-auto p-2 px-4"
+        >
           <h5>
             <span className="fw-bold">Scientific Name: </span>
             {product.sciName}
@@ -48,7 +53,7 @@ const SinglePlant = () => {
           <div id="btn-container" className="d-flex">
             <Link to="/">
               <button className="btn fw-bolder text-capitalize" id="btn-home">
-                back to home
+                back to Store
               </button>
             </Link>
 

@@ -2,7 +2,7 @@ import React from "react";
 import CartSummary from "../components/CartSummary";
 import InCartItem from "../components/InCartItem";
 import { useGlobalContext } from "../Context";
-
+import { Link } from "react-router-dom";
 const Cart = () => {
   const { data } = useGlobalContext();
 
@@ -12,10 +12,15 @@ const Cart = () => {
   // console.log(inCartItem);
   if (inCartItem.length === 0) {
     return (
-      <div className="container section">
-        <h2 className="plant-title text-center pt-2 mb-3">
+      <div className="container section d-flex flex-column align-items-center justify-content-center">
+        <h2 id="plant-title" className="text-center pt-2 mb-5">
           your cart is empty
         </h2>
+        <Link to="/">
+          <button className="btn fw-bolder text-capitalize mb-2" id="btn-home">
+            back to store
+          </button>
+        </Link>
       </div>
     );
   }

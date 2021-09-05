@@ -47,8 +47,10 @@ Variables
   --clr-bej: #eff3f2;
   --clr-white: #fff;
   --clr-black: #111;
-  --clr-primary-5: hsl(42, 78%, 60%);
-  --clr-index: rgb(246, 91, 227);
+  /* --clr-primary-5: hsl(42, 78%, 60%); */
+  --clr-primary-5: #cc3363;
+  --clr-index: #cc3363;
+  /* --clr-index: rgb(246, 91, 227); */
 }
 
 /*
@@ -77,7 +79,7 @@ body {
   letter-spacing: 0.03rem;
   font-weight: bolder;
 }
-ul {
+/* ul {
   list-style-type: none;
 }
 a {
@@ -133,7 +135,7 @@ h4 {
   h4 {
     line-height: 1;
   }
-}
+} */
 
 .section {
   max-width: var(--max-width);
@@ -142,7 +144,7 @@ h4 {
   width: 100vw;
 }
 
-.plant-title {
+#plant-title {
   font-family: "Permanent Marker", cursive;
 }
 
@@ -241,6 +243,7 @@ Plant List
   /* width: 16rem; */
   box-shadow: var(--light-shadow);
   transition: var(--transition);
+  /* width: 46%; */
 }
 
 #card:hover {
