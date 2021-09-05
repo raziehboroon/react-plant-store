@@ -16,7 +16,7 @@ const SinglePlant = () => {
 
   return (
     <div id="single-plant" className="container section">
-      <h2 className="text-center pt-3 mb-4 plant-title">{product.title}</h2>
+      <h2 className="plant-title text-center pt-3 mb-4">{product.title}</h2>
       <div className="row flex-column flex-sm-row mb-3">
         {/* image */}
         <div className="col-12 col-sm-4 d-flex justify-content-center justify-content-sm-end p-0">

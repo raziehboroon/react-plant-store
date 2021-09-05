@@ -44,7 +44,7 @@ const CopyRightinfo = () => {
         >
           feey.ch
         </a>
-        &nbsp;for punlishing these nice photos on&nbsp;
+        &nbsp;for publishing these nice photos on&nbsp;
         <a
           href="https://unsplash.com/@feeypflanzen"
           target="_blank"

@@ -144,7 +144,7 @@ h4 {
   width: 100vw;
 }
 
-#plant-title {
+.plant-title {
   font-family: "Permanent Marker", cursive;
 }
 
@@ -367,5 +367,8 @@ footer {
   }
   #inCart__item-container img {
     width: 50%;
+  }
+  footer p {
+    letter-spacing: var(--spacing);
   }
 }

@@ -10,9 +10,7 @@ const PlantList = () => {
   };
   return (
     <div className="row align-items-center justify-content-center pt-1 pb-3">
-      <h2 id="plant-title" className="text-center mt-2">
-        all Plants
-      </h2>
+      <h2 className="plant-title text-center mt-2">all Plants</h2>
       {data.map((item) => (
         <Plant key={item.id} {...item} />
       ))}

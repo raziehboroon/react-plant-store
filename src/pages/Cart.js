@@ -13,7 +13,7 @@ const Cart = () => {
   if (inCartItem.length === 0) {
     return (
       <div className="container section d-flex flex-column align-items-center justify-content-center">
-        <h2 id="plant-title" className="text-center pt-2 mb-5">
+        <h2 className="plant-title text-center pt-2 mb-5">
           your cart is empty
         </h2>
         <Link to="/">
