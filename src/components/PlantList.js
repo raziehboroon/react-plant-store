@@ -14,7 +14,7 @@ const PlantList = () => {
       {data.map((item) => (
         <Plant key={item.id} {...item} />
       ))}
-      <div className="col-2">
+      <div className="col-12">
         <button
           className="btn fw-bold text-capitalize rounded-circle p-2 my-4 mx-auto d-block"
           id="btn-home"
