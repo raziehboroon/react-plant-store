@@ -1,7 +1,8 @@
 import React from "react";
-import { useGlobalContext } from "../Context";
+import "./CartSummary.scss";
+import { useGlobalContext } from "../../Context";
 import { Link } from "react-router-dom";
-import PayPal from "./PayPal";
+import PayPal from "../PayPal/PayPal";
 const CartSummary = () => {
   const { subtotal, tax, total, clearCart } = useGlobalContext();
 

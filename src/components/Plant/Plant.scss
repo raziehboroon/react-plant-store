@@ -1,0 +1,47 @@
+@import "../../App.scss";
+#card {
+  /* width: 16rem; */
+  box-shadow: $light-shadow;
+  transition: $transition;
+  /* width: 46%; */
+}
+
+#card:hover {
+  box-shadow: $dark-shadow;
+}
+
+#card #image-container {
+  position: relative;
+  overflow: hidden;
+}
+#card img {
+  transition: transform 0.5s ease-in-out;
+}
+
+#card img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#image-container #btn-basket {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 10px;
+  transition: 0.5s all ease-in-out;
+  background-color: $clr-green-nav;
+  color: $clr-white;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 600px) {
+  #image-container #btn-basket {
+    right: -40px;
+    bottom: -40px;
+  }
+
+  #card:hover #btn-basket {
+    right: 0;
+    bottom: 0;
+  }
+}

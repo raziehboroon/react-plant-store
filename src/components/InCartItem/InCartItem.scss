@@ -1,0 +1,14 @@
+@import "../../App.scss";
+
+#inCart__item-container {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  #items-container {
+    flex-direction: row;
+  }
+  #items-container img {
+    width: 50%;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import Plant from "./Plant";
-import { useGlobalContext } from "../Context";
+import "./PlantList.scss";
+import Plant from "../Plant/Plant";
+import { useGlobalContext } from "../../Context";
 
 const PlantList = () => {
   const { data } = useGlobalContext();
@@ -9,7 +10,7 @@ const PlantList = () => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   return (
-    <div className="row align-items-center justify-content-center pt-1 pb-3">
+    <section className="row align-items-center justify-content-center pt-1 pb-3">
       <h2 className="plant-title text-center mt-2">all Plants</h2>
       {data.map((item) => (
         <Plant key={item.id} {...item} />
@@ -23,7 +24,7 @@ const PlantList = () => {
           top
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,7 @@
+//paypal feature works with vpn
 import React, { useEffect, useRef } from "react";
-import { useGlobalContext } from "../Context";
+import "./PayPal.scss";
+import { useGlobalContext } from "../../Context";
 const PayPal = () => {
   const { total, clearCart } = useGlobalContext();
   const paypal = useRef();

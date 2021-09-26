@@ -1,0 +1,105 @@
+// Mobile first design
+
+/* 
+==============
+Variables
+==============
+*/
+/* dark shades of primary color*/
+$clr-primary-1: hsl(43, 86%, 17%);
+$clr-primary-2: hsl(43, 77%, 27%);
+$clr-primary-3: hsl(43, 72%, 37%);
+$clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+/* lighter shades of primary color */
+$clr-primary-6: hsl(43, 89%, 70%);
+$clr-primary-7: hsl(43, 90%, 76%);
+$clr-primary-8: hsl(45, 86%, 81%);
+$clr-primary-9: hsl(45, 90%, 88%);
+$clr-primary-10: hsl(45, 100%, 96%);
+
+/* darkest grey - used for headings */
+$clr-grey-1: hsl(209, 61%, 16%);
+$clr-grey-3: hsl(209, 34%, 30%);
+$clr-grey-4: hsl(209, 28%, 39%);
+/* darkest grey - used for headings */
+$clr-grey-1: hsl(209, 61%, 16%);
+$clr-grey-2: hsl(211, 39%, 23%);
+$clr-grey-3: hsl(209, 34%, 30%);
+$clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+$clr-grey-5: hsl(210, 22%, 49%);
+$clr-grey-6: hsl(209, 23%, 60%);
+$clr-grey-7: hsl(211, 27%, 70%);
+$clr-grey-8: hsl(210, 31%, 80%);
+$clr-grey-99: hsl(212, 33%, 89%);
+$clr-grey-10: hsl(210, 36%, 96%);
+
+$ff-primary: "Oswald", sans-serif;
+$ff-secondary: "Permanent Marker", cursive;
+$transition: all 0.3s linear;
+$spacing: 0.1rem;
+$radius: 0.3rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+/* $dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+$dark-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+$max-width: 1170px;
+$clr-primary-7: hsl(43, 90%, 76%);
+
+$clr-grey-9: #999;
+$clr-green-nav: #29b779;
+$clr-green-subtutle: #008060;
+$clr-green-title: #1a525b;
+$clr-bej: #eff3f2;
+$clr-white: #fff;
+$clr-black: #111;
+/* $clr-primary-5: hsl(42, 78%, 60%); */
+$clr-primary-5: #cc3363;
+$clr-index: #cc3363;
+/* $clr-index: rgb(246, 91, 227); */
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $clr-black;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+  min-width: 100vw;
+  font-family: $ff-primary !important;
+  letter-spacing: 0.03rem;
+  font-weight: bolder;
+}
+
+.section {
+  max-width: $max-width;
+  margin: 0 auto;
+  min-height: calc(100vh - 7rem);
+  width: 100vw;
+}
+
+.plant-title {
+  font-family: $ff-secondary;
+}
+
+.mybtn {
+  border-width: 2px !important;
+  border-style: solid;
+}
+
+// .plant-list {
+//   min-height: calc(100vh - 7rem);
+// }

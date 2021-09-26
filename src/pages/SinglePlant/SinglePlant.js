@@ -1,18 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { useGlobalContext } from "../Context";
+import "./SinglePlant.scss";
+import { useGlobalContext } from "../../Context";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import Error from "../Error/Error";
 const SinglePlant = () => {
   const { id } = useParams();
+  // console.log(id);
+  // console.log(parseInt(id));
   const [product, setProduct] = useState([]);
   const { data, addItemToCart, setShowModal, setModalID } = useGlobalContext();
 
   useEffect(() => {
-    const getProductData = (id) => {
-      return data.find((item) => item.id === Number(id));
-    };
-    setProduct(getProductData(id));
+    const newProduct = data.find((item) => item.id === Number(id));
+
+    if (newProduct) {
+      setProduct(newProduct);
+    }
   }, [id, data]);
+
+  if (product.length === 0) {
+    return <Error />;
+  }
 
   return (
     <div id="single-plant" className="container section">

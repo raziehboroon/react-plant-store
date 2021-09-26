@@ -1,18 +1,18 @@
-//
 //www.flaticon.com/free-icon/cactus_4842199
 
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../cactusBlack.svg";
-// import cactus from "./cactus.svg";
-import { useGlobalContext } from "../Context";
+/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
 
-const Navigation = () => {
+import React from "react";
+import "./Navbar.scss";
+import { Link } from "react-router-dom";
+import logo from "../../logos/cactusBlack.svg";
+import { useGlobalContext } from "../../Context";
+
+const Navbar = () => {
   const { itemInBasket } = useGlobalContext();
   return (
     <nav className="navbar navbar-dark navbar-expand-lg p-0 m-0">
       <div className="container align-items-center">
-        {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
         <Link to="/">
           <img src={logo} alt="cactus logo" className="logo navbar-brand" />
         </Link>
@@ -43,4 +43,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Navbar;

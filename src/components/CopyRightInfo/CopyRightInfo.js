@@ -1,6 +1,7 @@
 import React from "react";
+import "./CopyRightInfo.scss";
 
-const CopyRightinfo = () => {
+const CopyRightInfo = () => {
   return (
     <>
       <h6 className="text-center text-capitalize fw-bold text-secondary">
@@ -58,4 +59,4 @@ const CopyRightinfo = () => {
   );
 };
 
-export default CopyRightinfo;
+export default CopyRightInfo;

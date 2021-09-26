@@ -1,0 +1,36 @@
+@import "../../App.scss";
+#btn-home {
+  letter-spacing: 0.1rem;
+  transition: $transition;
+  border: 2px solid $clr-green-nav;
+  color: $clr-green-nav;
+}
+
+#btn-home:hover,
+#btn-home:active {
+  background-color: $clr-green-nav;
+  color: $clr-white;
+}
+
+#inCart__header-container {
+  display: none;
+}
+
+#inCart__header-line {
+  display: none;
+}
+
+.line-divider {
+  background-color: $clr-grey-9;
+}
+
+@media screen and (min-width: 600px) {
+  #inCart__header-container {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  #inCart__header-line {
+    display: block;
+  }
+}

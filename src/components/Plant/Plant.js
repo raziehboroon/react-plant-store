@@ -1,5 +1,6 @@
 import React from "react";
-import { useGlobalContext } from "../Context";
+import "./Plant.scss";
+import { useGlobalContext } from "../../Context";
 import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 
@@ -7,7 +8,7 @@ const Plant = ({ id, title, img, price, inCart }) => {
   const { addItemToCart, setShowModal, setModalID } = useGlobalContext();
 
   return (
-    <div id="card" className="col-5 col-sm-3 m-2 m-sm-3 p-0">
+    <article id="card" className="col-5 col-sm-3 m-2 m-sm-3 p-0">
       <div id="image-container">
         <Link to={`/plant/${id}`}>
           <img src={img} alt={title} className="card-img-top img-fluid" />
@@ -34,22 +35,22 @@ const Plant = ({ id, title, img, price, inCart }) => {
           </h5>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
+
+export default Plant;
 
 // Plant.propTypes = {
 //   id: PropTypes.number.isRequired,
 //   title: PropTypes.string.isRequired,
-//   sciName: PropTypes.string.isRequired,
-//   family: PropTypes.string.isRequired,
-//   species: PropTypes.string.isRequired,
 //   img: PropTypes.string.isRequired,
 //   price: PropTypes.number.isRequired,
-//   info: PropTypes.string.isRequired,
 //   inCart: PropTypes.bool.isRequired,
-//   count: PropTypes.number.isRequired,
-//   total: PropTypes.number.isRequired,
+// sciName: PropTypes.string.isRequired,
+// family: PropTypes.string.isRequired,
+// species: PropTypes.string.isRequired,
+// info: PropTypes.string.isRequired,
+// count: PropTypes.number.isRequired,
+// total: PropTypes.number.isRequired,
 // };
-
-export default Plant;

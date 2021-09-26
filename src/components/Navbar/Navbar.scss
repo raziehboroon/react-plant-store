@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.navbar {
+  background-color: $clr-green-nav;
+  height: 4rem;
+}
+
+.navbar .logo {
+  width: 2rem;
+}
+
+.navbar .container {
+  width: $max-width;
+}
+
+nav li:hover .nav-link {
+  color: $clr-primary-7 !important;
+}
+
+.nav-title {
+  letter-spacing: $spacing;
+}
+
+#btn-nav {
+  outline: none !important;
+  position: relative;
+}
+
+#btn-nav:hover {
+  color: $clr-green-nav !important;
+  border-color: $clr-white !important;
+  background-color: $clr-white;
+}
+
+#basket-index {
+  position: absolute;
+  background-color: $clr-index;
+  top: -12px;
+  right: -12px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}

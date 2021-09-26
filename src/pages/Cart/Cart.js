@@ -1,7 +1,8 @@
 import React from "react";
-import CartSummary from "../components/CartSummary";
-import InCartItem from "../components/InCartItem";
-import { useGlobalContext } from "../Context";
+import "./Cart.scss";
+import CartSummary from "../../components/CartSummary/CartSummary";
+import InCartItem from "../../components/InCartItem/InCartItem";
+import { useGlobalContext } from "../../Context";
 import { Link } from "react-router-dom";
 const Cart = () => {
   const { data } = useGlobalContext();

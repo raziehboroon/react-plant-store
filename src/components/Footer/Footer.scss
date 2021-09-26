@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+footer {
+  background-color: $clr-green-nav;
+  height: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+  footer p {
+    letter-spacing: $spacing;
+  }
+}

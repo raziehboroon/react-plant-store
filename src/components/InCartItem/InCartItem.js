@@ -1,10 +1,11 @@
 import React from "react";
-import { useGlobalContext } from "../Context";
+import "./InCartItem.scss";
+import { useGlobalContext } from "../../Context";
 
 const InCartItem = ({ id, title, img, price, count, total }) => {
   const { removeFromCart, increaseCount, decreaseCount } = useGlobalContext();
   return (
-    <div id="inCart__item-container" className="row m-2 align-items-center">
+    <div id="items-container" className="row m-2 align-items-center">
       <div className="col-12 col-sm-2 text-center my-2 my-sm-1">
         <img src={img} alt={title} className="mx-auto w-50" />
       </div>

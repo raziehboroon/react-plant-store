@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+#single-plant img {
+  max-width: 300px;
+}
+#single-plant-info {
+  letter-spacing: $spacing;
+}
+
+#single-plant #btn-container {
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .single-plant .btn-container {
+    justify-content: left;
+  }
+}
